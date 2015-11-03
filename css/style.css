@@ -1,150 +1,261 @@
-header{
-  position: fixed;
-  width: 100%;
-  background-color: white;
-  border-bottom: 2px solid black;
-}
-
-header ul{
-  float: right;
-  padding-top: 25px;
-}
-
-.nav li{
-  text-transform: uppercase;
-  display: inline;
-  margin-left: 0;
-  margin-right: 10px;
-}
-
-.nav img{
-  width: 14px;
-  height: 14px;
-}
-
-.nav li a{
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
+  header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid black;
   }
 
-.nav li a:hover, .selected{
-  color: black;
-}
+  header ul{
+    float: right;
+    padding-top: 25px;
+  }
 
-header h1{
-  float: left;
-  text-indent: -9999px;
-  background-image: url("../img/logo.jpg");
-  border-right: 2px solid black;
-  background-repeat: no-repeat;
-  width: 244px;
-  height: 50px;
-  margin-top: 10px;
-  margin-bottom: 0;
-  padding-bottom: 20px;
-  padding-right: 20px;
-}
+  .nav li{
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
 
-.hero{
-  background-image: url("../img/hero.jpg");
-  background-repeat: no-repeat;
+  .nav img{
+    width: 14px;
+    height: 14px;
+  }
+
+  .nav li a{
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+  .nav li a:hover, .selected{
+    color: black;
+  }
+
+  header h1{
+    float: left;
+    text-indent: -9999px;
+    background-image: url("../img/logo.jpg");
+    border-right: 2px solid black;
+    background-repeat: no-repeat;
+    width: 244px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+
+  .hero{
+    background-image: url("../img/hero.jpg");
+    background-repeat: no-repeat;
+      margin-top: 100px;
+    width: 940px;
+    height: 450px;
+  }
+
+  .hero  h1{
+    text-align: center;
+    margin-top: 80px;
+    font-family: sans-serif;
+  }
+
+  .hero  h2{
+    text-align: center;
+    margin-top: 60px;
+    color: yellow;
+    font-family: sans-serif;
+  }
+
+  .button {
+    padding: 5px;
+  }
+
+  .button:hover{
+    background-color: green;
+    color:white;
+  }
+
+  .web_insight, .statistics{
+    margin-top: 40px;
+  }
+
+  .web_insight_content h2, .statistics h2{
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+  }
+
+  .statistics_graph, .web_insight_logo{
+    margin-top: 60px;
+  }
+
+  .statistics_graph{
+    margin-bottom: 50px;
+  }
+
+  .statistics_graph img{
+    width: 280px;
+    float: right;
+  }
+
+  .footer{
+    background-color: lightgrey;
+    padding-top: 10px;
+    /*border: 2px solid grey;*/
+  }
+
+  .footer li{
+    margin: 0;
+  }
+
+  .footer a, .portfolio_head .selected{
+    color: #424242;
+  }
+
+  .footer h4 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+
+  .footer a:hover{
+    text-shadow: 1px 1px 2px;
+  }
+
+  .footer .starwebs{
+    padding-left: 20px;
+    width: 200px;
+  }
+
+  .footer ul{
+    list-style: none;
+  }
+
+  .footer .like img{
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+    border-radius: 5px;
+  }
+
+
+  /*..............................POrtfolio...............................................................................*/
+
+  /*.variation{
     margin-top: 100px;
-  width: 940px;
-  height: 450px;
-  margin-bottom: 20px;
-}
+    background-color: #A4A4A4;
+    height: 100px;
+  }*/
 
-.hero  h1{
-  text-align: center;
-  margin-top: 80px;
-  color: white;
-  font-size: 30px;
-  font-family: sans-serif;
-}
+  /*.variation .grid_4, */
+  .portfolio_head .grid_8{
+    float: left;
+    margin-top: 25px;
+  }
 
-.hero  h2{
-  text-align: center;
-  margin-top: 60px;
-  color: yellow;
-  font-size: 25px;
-  font-family: sans-serif;
-}
+  /*.variation .grid_4 h1,*/
+   .hero  h2{
+    font-size: 25px;
+  }
 
-.button {
+  /*.variation .grid_4 .emphasis, .variation .grid_4 h1, .variation .grid_8 li a:hover, .variation .grid_8 li a.selected,*/
+  .hero  h1, .button{
+    color: white;
+  }
+
+  /*.variation .grid_8{
+    float: right;
+    text-align: right;
+    margin-top: 35px;
+  }
+
+  .variation .grid_8 li a{
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+  }
+
+  .variation .grid_8 li a:hover, .variation .grid_8 li a.selected, */
+  .button{
+    background-color: #000000;
+  }
+
+  .portfolio_head{
+    background-color: #EFFBF8;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: sans-serif;
+    margin-top: 80px;
+    margin-bottom: 10px;
+  }
+/*.variation .grid_8 li, */
+  .portfolio_head li, .nav li, .footer .like ul li{
+    display: inline;
+  }
+
+  .sitename{
+    color: red;
+  }
+
+/*, .variation .grid_8 li a*/
+  .portfolio_head li a, .nav li a, .button, .footer a{
     text-decoration: none;
-  background-color: black;
-  color: white;
-  padding: 5px;
+  }
+
+  .portfolio_head .grid_4{
+    float: right;
+      font-size: 14px;
+      text-align: right;
+      margin-top: 52px;
+      overflow: hidden;
+  }
+
+  .portfolio_head p{
+    font-size: 18px;
+  }
+
+/*, .variation .grid_4 h1*/
+  .portfolio_head h1, .portfolio_head p{
+      padding-left: 15px;
+  }
+
+/*, .variation .grid_4 .emphasis*/
+  .portfolio_head h1, .hero  h1{
+    font-size: 30px;
+  }
+
+  .portfolio_head .grid_4 li, .nav li{
+    margin-left: 0;
+  }
+
+  .portfolio_head .selected{
+    padding-right: 15px;
+  }
+
+  .main .portfolio_row_wrapping .portfolio_unit img{
+    width: 300px;
+    height: 200px;
+  }
+
+  .main .portfolio_row_wrapping .portfolio_unit
+  {
+    width: 300px;
+    height: 340px;
+  }
+
+  .portfolio_head h1, {
+    margin-bottom: 0px;
+  }
+
+  .main .portfolio_row_wrapping{
+    margin-left: 0px;
+  }
+
+.main .portfolio_row_wrapping .portfolio_unit h1{
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
-.button:hover{
-  background-color: green;
-  color:white;
+.main .portfolio_row_wrapping .portfolio_unit p{
+  font-size: 15px;
 }
-
-.sitename{
-  color: red;
-}
-
-.web_insight, .statistics{
-  margin-top: 40px;
-}
-
-.web_insight_content h2, .statistics h2{
-  border-bottom: 2px solid black;
-  padding-bottom: 20px;
-}
-
-.statistics_graph, .web_insight_logo{
-  margin-top: 60px;
-}
-.statistics_graph{
-  margin-bottom: 50px;
-}
-
-.footer{
-  background-color: black !important;
-  color: white;
-}
-
-.footer li{
-  margin: 0;
-}
-
-.footer a{
-  text-decoration: none;
-  color: grey;
-}
-
-.footer h4 {
-  font-size: 18px;
-}
-
-.footer a:hover{
-  color: red;
-}
-
-.footer .starwebs{
-  padding-left: 20px;
-  width: 200px;
-}
-
-.footer .like ul{
-  list-style: none;
-}
-
-.footer .like{
-  list-style: none;
-}
-
-.footer .like ul li{
-  display: inline;
-}
-
-.footer .like img{
-  width: 35px;
-  height: 35px;
-  margin-right: 5px;
-  border-radius: 5px;
-}
+  .hero{
+    margin-bottom: 20px;
+  }
